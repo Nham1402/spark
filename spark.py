@@ -7,3 +7,4 @@ spark = SparkSession.builder \
 df = spark.read.csv("data.csv", header=True, inferSchema=True)
 df.show()   
 print("DataFrame loaded successfully")
+print("DataFrame loaded successfully")
