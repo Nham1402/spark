@@ -3,7 +3,7 @@ name: Auto Deploy to Ubuntu Server
 on:
   push:
     branches:
-      - master  # Hoặc main
+      - main  # Hoặc main
 
 jobs:
   deploy:
@@ -20,5 +20,5 @@ jobs:
         port: 22
         script: |
           cd /home/data/nfs/spark/spark
-          git pull origin master
+          git pull origin main
           echo "✅ Deploy thành công lúc $(date)"
